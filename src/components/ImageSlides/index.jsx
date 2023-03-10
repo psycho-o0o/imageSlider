@@ -1,20 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function ImageSlides({currentIndex, imageSlidesInfo}) {
+function ImageSlides({ imageSlidesInfo }) {
     return (
         <div>
             {
-                imageSlidesInfo.map(({index, url}) => <ImageSlide key={index} url={url} />)
+                imageSlidesInfo.map(({ name }, index) => <ImageSlide key={index} name={name} />)
             }
         </div>
     );
 }
 
-function ImageSlide({url}) {
-    const [width, height] = [500, 800];
+function ImageSlide({ name }) {
+    const [width, height] = [400, 300];
+    const imageUrl = process.env.PUBLIC_URL + "/images/" + name;
     return (
-        <img src={url} width={width} height={height}/>
+        <img src={imageUrl} width={width} height={height} />
     );
 }
 

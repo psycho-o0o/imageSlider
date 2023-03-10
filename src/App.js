@@ -1,10 +1,9 @@
-import styled from 'styled-components';
-import ImageSlider from './components/ImageSlider';
+import ImageSlider from './containers/ImageSlider';
 
 function App() {
   return (
     <div>
-        <ImageSlider />
+      <ImageSlider />
     </div>
   );
 }
