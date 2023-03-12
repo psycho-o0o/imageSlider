@@ -15,3 +15,11 @@
  - ImageSlides에서 이미지를 일렬로 나열하기 o
  - ImageSlides에서 일렬로 나열된 이미지에서 현재 색인인 이미지만 표시
  - ImageSlides에서 왼쪽, 오른쪽으로 이미지 이동시키기
+
+2023/3/12일 일요일
+- ImageSlides에서 이미지를 일렬로 나열하기 <완성>
+=> ImageSlides 구조도 만들기 : Wrapper ->  Container -> Content 
+  * Wrapper는 단일 개체를 감쌀때 쓰고, Container는 여러 개체를 감쌀 때 쓴다.
+
+- ImageSlides에서 일렬로 나열된 이미지에서 현재 색인인 이미지만 표시
+- ImageSlides에서 왼쪽, 오른쪽으로 이미지 이동시키기
