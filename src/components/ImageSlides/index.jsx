@@ -1,21 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+import ImageSlide from "../ImageSlide";
+import { Wrapper, Container } from "./style";
 
-function ImageSlides({ imageSlidesInfo }) {
-    return (
-        <div>
-            {
-                imageSlidesInfo.map(({ name }, index) => <ImageSlide key={index} name={name} />)
-            }
-        </div>
-    );
-}
-
-function ImageSlide({ name }) {
+function ImageSlides({ currentIndex, imageSlidesInfo }) {
     const [width, height] = [400, 300];
-    const imageUrl = process.env.PUBLIC_URL + "/images/" + name;
+
     return (
-        <img src={imageUrl} width={width} height={height} />
+        <Wrapper width={width} height={height}>
+            <Container width={width} currentIndex={3}>{
+                imageSlidesInfo.map(({ name }, index) =>
+                    <ImageSlide key={index} name={name} width={width} height={height} />
+                )
+            }</Container>
+        </Wrapper>
     );
 }
 
