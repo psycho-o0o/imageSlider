@@ -53,6 +53,6 @@
 1. MoveButton을 눌러서 이미지를 좌우로 이동시키기 
 ** 단계
  - MoveButton 시험용 디자인 만들기 o
- - 각 MoveButton을 클릭했을 때 currentIndex 값 변경하기
+ - 각 MoveButton을 클릭했을 때 currentIndex 값 변경하기 o
  - 추가 요구 사항(가정)! : 마지막 슬라이드에서 처음 슬라이드로 이동할 때, 한 칸만 움직였으면 좋겠어요!!
  * 고칠사항1 참조
