@@ -19,6 +19,20 @@
 => -webkit-user-drag를 처음 검색했을 때 나왔는데, firefox에서 지원하지 않음
 => 그러던 중에 사이트에서 draggable이라는 html 속성을 알려줘서 적용함
 
+-----------실패 사항----------------------
+ <!-- - 추가 요구 사항(가정)! : 마지막 슬라이드에서 처음 슬라이드로 이동할 때, 한 칸만 움직였으면 좋겠어요!!
+  => imageSlides에서 양 끝 슬라이드에 서로 반대되는 슬라이드를 추가
+  => imageSlides에서 Container에 left값을 주어 각 끝 슬라이드가 보이지 않게 함
+   -> imageSlides가 1개일 경우와 2개 이상일 경우
+    = 1개일 경우 : left값을 주면 안된다. (양쪽에 슬라이드가 존재하지 않기 때문에)
+    = 2개일 경우 : left값을 주어 원래 슬라이드 영역을 맞춰야 한다
+
+  ** 실타래 문제 해결법
+  1. 첫번째 시도
+  => useCallback으로 moveSlide를 만들어 currentIndex 값을 조정한다. o
+  => 만약 moveSlide에서 -1이나 length로 currentIndex 값이 변경되었을 경우, transition을 false로 만들고, currentIndex를 -1은 length-1로, length는 0으로 만든다.
+  ======= 실패 : 한 훅은 상태 변경을 여러번할 경우 차례차례 실행시켜 최종적으로 한 값으로 도출된다. -->
+
 2023/3/10일 금요일
 - imageSlides
  1. map을 통해 ImageSlide를 일렬로 나열
@@ -54,5 +68,5 @@
 ** 단계
  - MoveButton 시험용 디자인 만들기 o
  - 각 MoveButton을 클릭했을 때 currentIndex 값 변경하기 o
- - 추가 요구 사항(가정)! : 마지막 슬라이드에서 처음 슬라이드로 이동할 때, 한 칸만 움직였으면 좋겠어요!!
+ 
  * 고칠사항1 참조
