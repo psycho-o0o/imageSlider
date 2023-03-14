@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
     width: ${props => props.width}px;
@@ -9,6 +9,6 @@ export const Wrapper = styled.div`
 export const Container = styled.section`
     width: 10000px;
     display : flex;
-    transition : transform .5s ease;
     transform : translateX(${({ width, currentIndex }) => -width * currentIndex}px);
+    transition : transform .5s ease;
 `

@@ -21,31 +21,24 @@ const imageSlidesInfo = [
         name: 'image5.jpg'
     }
 ]
+const { length } = imageSlidesInfo;
 
 function ImageSlider() {
     // state
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    // useCallback
     const moveSlide = useCallback((to) => () => {
-        if (to === -1) {
-            setCurrentIndex(imageSlidesInfo.length - 1)
-        }
-        else if (to === imageSlidesInfo.length) {
-            setCurrentIndex(0);
-        }
-        else if (to !== currentIndex) {
-            setCurrentIndex(to);
-        }
-    }, [currentIndex]);
+        if (to === -1) setCurrentIndex(length - 1);
+        else if (to === length) setCurrentIndex(0);
+        else setCurrentIndex(to)
+    }, []);
 
     return (
         <Wrapper>
             <Container>
                 <article className="top">
-                    <MoveButton type="left" onClick={moveSlide(currentIndex - 1)} />
+                    <MoveButton type="left" moveSlide={moveSlide(currentIndex - 1)} />
                     <ImageSlides currentIndex={currentIndex} imageSlidesInfo={imageSlidesInfo} />
-                    <MoveButton type="right" onClick={moveSlide(currentIndex + 1)} />
+                    <MoveButton type="right" moveSlide={moveSlide(currentIndex + 1)} />
                 </article>
                 <article >
                     <IndexButton currentIndex={currentIndex} length={imageSlidesInfo.length}

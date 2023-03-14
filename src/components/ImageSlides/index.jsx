@@ -6,11 +6,14 @@ function ImageSlides({ currentIndex, imageSlidesInfo }) {
 
     return (
         <Wrapper width={width} height={height}>
-            <Container width={width} currentIndex={3}>{
-                imageSlidesInfo.map(({ name }, index) =>
-                    <ImageSlide key={index} name={name} width={width} height={height} />
-                )
-            }</Container>
+            <Container
+                width={width}
+                currentIndex={currentIndex}
+            >
+                {
+                    imageSlidesInfo.map(({ name }, index) => <ImageSlide key={index} name={name} width={width} height={height} />)
+                }
+            </Container>
         </Wrapper>
     );
 }
