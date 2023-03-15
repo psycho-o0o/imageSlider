@@ -1,3 +1,6 @@
+---결과본 gif---
+<img src="https://user-images.githubusercontent.com/122195454/225238597-dc9a2477-69d0-4222-a64c-769b7a353728.gif" />
+
 --------기타 잡생각-------------------
  1. visual studio code에서 Component 색깔이 눈에 띄게 변경하자. (빨간색이나 보라색이 나을 듯)
  2. 컴포넌트 내부에서 사용하지 않는 상수 값을 밖으로 빼면 좋은걸까? 나쁜걸까?
