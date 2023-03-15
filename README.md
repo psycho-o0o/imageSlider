@@ -70,3 +70,7 @@
  - 각 MoveButton을 클릭했을 때 currentIndex 값 변경하기 o
  
  * 고칠사항1 참조
+
+2023/3/15일 수요일
+1. IndexButton 시험용 디자인 만들기 o
+2. IndexButton 눌렀을 때 화면 이동시키기 o
