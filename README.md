@@ -1,5 +1,4 @@
----결과본 gif---
-<img src="https://user-images.githubusercontent.com/122195454/225238597-dc9a2477-69d0-4222-a64c-769b7a353728.gif" />
+<img src="https://user-images.githubusercontent.com/122195454/225484144-d5350982-a680-4d39-b9e5-26a18a30fe28.gif" />
 
 --------기타 잡생각-------------------
  1. visual studio code에서 Component 색깔이 눈에 띄게 변경하자. (빨간색이나 보라색이 나을 듯)
