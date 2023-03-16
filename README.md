@@ -1,4 +1,35 @@
-<img src="https://user-images.githubusercontent.com/122195454/225484144-d5350982-a680-4d39-b9e5-26a18a30fe28.gif" />
+<h1> 이미지 슬라이더 - 장동건 </h1>
+ <h2> 개발기간 </h2>
+ Version 0.0.1 : 2023년 3월 10일 ~ 2023년 3월 15일
+ 
+ <h2> 개발목적 </h2>
+ React 개발과정을 습득하기 위해 간단한 이미지 슬라이더 만들기
+ 이미지 슬라이더의 작동방식을 이해하고, 다양한 이미지 슬라이더 분석하기 
+ 
+ <h2> 사용한 기술 </h2>
+ 리액트, styled-components
+ 
+ <h2> 사용한 확장 프로그램(VS Code) </h2>
+ vscode-styled-components : styled-components로 된 코드에 하이라이트와 에러제공 및 자동문법 기능 제공
+ Styled-Components Extractor : 파일 내에서 styled-components에서 import되지 않은 컴포넌트를 추출해 파일을 만들고 임포트 해온다.
+ Reactjs code snippets : 반복적인 리액트 파일을 만들때 축약어로 기본 형식의 파일을 만든다.
+ Auto Rename Tag : 태그의 시작과 끝에서 이름을 동시에 바꿔준다.
+ 
+ 
+ <h2> 개발 진행 순서 </h1>
+  <ol>
+   <li> 요구사항 정의하기 </li>
+   <li> 요구사항 분석하기 </li>
+   <li> 기능 단위로 나누고 큰 틀 만들기 </li>
+   <li> 세부 기능에서 구조 만들기 (component, state, props, hooks ) </li>
+   <li> 세부 기능 구현하기 </li>
+   <li> 테스트하기 </li> 
+   <li> 정리하기 </li>
+   <li> 업그레이드 및 수정사항 진행하기 </li>
+  </ol> 
+
+
+
 
 --------기타 잡생각-------------------
  1. visual studio code에서 Component 색깔이 눈에 띄게 변경하자. (빨간색이나 보라색이 나을 듯)
@@ -77,3 +108,6 @@
 2023/3/15일 수요일
 1. IndexButton 시험용 디자인 만들기 o
 2. IndexButton 눌렀을 때 화면 이동시키기 o
+
+<img src="https://user-images.githubusercontent.com/122195454/225484144-d5350982-a680-4d39-b9e5-26a18a30fe28.gif" />
+
