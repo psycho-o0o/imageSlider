@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "target": "ES5",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_moudles", "dist"]
+}

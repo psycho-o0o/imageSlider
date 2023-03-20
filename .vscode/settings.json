@@ -1,7 +1,5 @@
 {
-    "editor.semanticTokenColorCustomizations": {
-    
-    },
-    "editor.suggest.showColors": true,
-    "editor.rulers" : [120]
+  "editor.semanticTokenColorCustomizations": {},
+  "editor.suggest.showColors": true,
+  "editor.rulers": [120]
 }
