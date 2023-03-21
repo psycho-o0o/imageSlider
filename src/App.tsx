@@ -1,7 +1,7 @@
-import ImageSlider from './containers/ImageSlider';
+import ImageSlider from "./containers/ImageSlider";
 // import Test from './Test'
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <ImageSlider />

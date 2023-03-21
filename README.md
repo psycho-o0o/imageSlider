@@ -148,5 +148,3 @@
   <li> tyled-component를 쓰기 위해 분리된 style 파일은 jsx가 아닌 js를 써야 하지 않을까? </li>
   <li> Import에서 절대경로를 지정할 수는 없는가? </li>
  </ol>
- 
-
