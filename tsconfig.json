@@ -2,8 +2,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "allowJs": true,
-    "target": "ES5",
-    "outDir": "./dist",
+    "target": "ES6",
     "moduleResolution": "node",
     "lib": ["ES2015", "DOM", "DOM.Iterable"]
   },
