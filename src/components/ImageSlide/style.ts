@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { IWrapper } from "./type";
 
-export const Wrapper = styled.article`
+export const Wrapper = styled.article<IWrapper>`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
 `;

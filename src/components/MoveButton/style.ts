@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IWrapperProps } from "./type";
 
 const degreeByType = {
   left: 0,
@@ -7,7 +8,7 @@ const degreeByType = {
   bottom: 270,
 };
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<IWrapperProps>`
   width: 50px;
   height: 50px;
   cursor: pointer;
