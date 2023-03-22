@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import TestChild from "./TestChild";
 
-function Test() {
+function Test(): JSX.Element {
   const [value, setValue] = useState(0);
   const onClick = useCallback(() => {
     setValue(value + 1);
